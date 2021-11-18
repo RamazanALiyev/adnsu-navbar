@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position: relative;
+}
+
+/* Start Header-Center-img */
+.header .header-center-img{
+    position: absolute;
+    transform: translateX(270%);
+    top: 0;
+}
+.header .header-center-img img{
+    width: 212px;
+    height: 130px;
+    box-shadow: 2px 11px 16px rgb(0 0 0 / 80%);
+}
+/* Finished Header-Center-img */
+
+/* Start Header-search-lang */
+.header .header-search-lang{
+    width: 100%;
+    background-color: #1a265c;
+    height: 37px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 100px;
+}
+.header .header-search-lang .header-search{
+    position: relative;
+    margin-right: 15px;
+    padding-right: 30px;
+}
+.header .header-search-lang .header-search input{
+    background-color: transparent;
+    border: 0px solid transparent;
+    width: 60px;
+    color: white;
+    transition: .5s width;
+    margin-right: 5px;
+}
+.header .header-search-lang .header-search input::placeholder{
+    color: rgb(190, 190, 190);
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 5px;
+}
+.header .header-search-lang .header-search input:focus{
+    outline: none;
+    box-shadow: 1px 1px 9px #66afe9,
+                -1px -1px 9px #66afe9;
+}
+.header .header-search-lang .header-search:hover input{
+    width: 120px;
+}
+.header .header-search-lang .header-search label img{
+    position: absolute;
+    top: 1px;
+}
+.header .header-search-lang .header-lang{
+    padding-left: 10px;
+}
+.header .header-search-lang .header-lang img{
+    margin: 7px 12px 0 0;
+}
+/* Finished Header-search-lang */
+
+/* Start Header-Navbar */
+.header .header-navbar{
+    height: 100px;
+    box-shadow: 2px 2px 7px lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.header .header-navbar .header-navbar-left{
+    padding-left: 120px;
+}
+.header .header-navbar .header-navbar-left ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.header .header-navbar .header-navbar-left ul li{
+    list-style-type: none;
+    position: relative;
+}
+.header .header-navbar .header-navbar-left ul li a.left-right{
+    color: #1a265c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: block;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content{
+    display: flex;
+    position: absolute;
+    top: 78px;
+    width: 450px;
+    height: 330px;
+    box-shadow: 1px 1px 7px lightgray;
+    visibility: hidden;
+}
+.header .header-navbar .header-navbar-left ul li a:hover.left-right + .adnsu-content{
+    visibility: visible;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-left{
+    padding: 20px 0 0 20px;
+    line-height: 25px;
+    color: #1a265c;
+    letter-spacing: 1px;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-right{
+    padding: 20px 20px 0px 20px;
+    line-height: 25px;
+    color: #1a265c;
+    letter-spacing: 1px;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-left ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-right ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-left ul li a{
+    text-decoration: none;
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-left ul li .adnsu-content .adnsu-content-right ul li a{
+    text-decoration: none;
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content{
+    position: absolute;
+    top: 78px;
+    display: flex;
+    width: 550px;
+    height: 350px;
+    box-shadow: 1px 1px 7px lightgray;
+    visibility: hidden;
+}
+.header .header-navbar .header-navbar-left ul li a:hover.left-right + .akademik-content{
+    visibility: visible;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-left{
+    padding: 15px 0 0 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-left ul li a{
+    text-decoration: none;
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-right{
+    padding: 20px 20px 20px 20px;
+    line-height: 20px;
+    letter-spacing: .5px;
+    color: #1a265c; 
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-right ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-right ul li a{
+    text-decoration: none;
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-left ul li .akademik-content .akademik-content-left ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-right{
+    padding-right: 200px;
+}
+.header .header-navbar .header-navbar-right ul{
+    display: flex;
+    justify-content: flex-start;
+}
+.header .header-navbar .header-navbar-right ul li{
+    list-style-type: none;
+}
+.header .header-navbar .header-navbar-right ul li a.left-right{
+    color: #1a265c;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: block;
+}
+.header .header-navbar .header-navbar-left ul li:hover a.left-right{
+    border-bottom: 2px solid #00427c;
+}
+.header .header-navbar .header-navbar-right ul li:hover a.left-right{
+    border-bottom: 2px solid #00427c;
+}
+.header .header-navbar .header-navbar-right ul li .xidmetler-content{
+    position: absolute;
+    top: 140px;
+    width: 300px;
+    height: 220px;
+    box-shadow: 1px 1px 7px lightgray;
+    visibility: hidden;
+}
+.header .header-navbar .header-navbar-right ul li .xidmetler-content .center{
+    padding: 20px;
+}
+.header .header-navbar .header-navbar-right ul li .xidmetler-content .center ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-right ul li .xidmetler-content .center ul li a{
+    text-decoration: none;
+    color: #1a265c;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+.header .header-navbar .header-navbar-right ul li .xidmetler-content .center{
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-right ul li a.left-right:hover + .xidmetler-content{
+    visibility: visible;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content{
+    position: absolute;
+    top: 140px;
+    right: 200px;
+    width: 540px;
+    height: 240px;
+    box-shadow: 1px 1px 7px lightgray;
+    visibility: hidden;
+}
+.header .header-navbar .header-navbar-right ul li a.left-right:hover + .telebe-content{
+    visibility: visible;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-left{
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-right{
+    color: #1a265c;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-left ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-right ul{
+    display: flex;
+    flex-direction: column;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-left{
+    padding: 20px;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-right{
+    padding: 20px;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content{
+    display: flex;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-right ul li a{
+    text-decoration: none;
+    color: #1a265c;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+.header .header-navbar .header-navbar-right ul li .telebe-content .telebe-content-left ul li a{
+    text-decoration: none;
+    color: #1a265c;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+/* Finished Header-Navbar */
